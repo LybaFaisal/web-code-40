@@ -1,0 +1,81 @@
+/* Main Page CSS */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: url('https://i.pinimg.com/564x/34/4c/31/344c31af24decce0b5d448cc5d00c1ef.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+.stats-section {
+    background-color: #3a4a5b;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.stat-item .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* 1st page ends here */
